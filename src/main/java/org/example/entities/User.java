@@ -11,21 +11,21 @@ public class User implements Serializable {
     @Column(name = "ID")
     private Long id;
 
-    @Column(length = 55, name = "NOME", nullable = false)
+    @Column(length = 55, name = "NAME", nullable = false)
     private String name;
 
-    @Column(name = "IDADE", nullable = false)
-    private Integer idade;
+    @Column(name = "AGE", nullable = false)
+    private Integer age;
 
     //Construtor Vazio
 
     public User() {
     }
 
-    public User(Long id, String name, Integer idade) {
+    public User(Long id, String name, Integer age) {
         this.id = id;
         this.name = name;
-        this.idade = idade;
+        this.age = age;
     }
 
     public Long getId() {
@@ -44,11 +44,11 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public Integer getIdade() {
-        return idade;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setIdade(Integer idade) {
-        this.idade = idade;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
